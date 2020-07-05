@@ -1,0 +1,14 @@
+void setup() {
+  size(500, 400); 
+}
+
+void draw() {
+  background(255);
+  strokeWeight(2);
+  stroke(mouseY/2, mouseY/2, mouseX/2);
+  rectMode(CENTER);
+  fill(mouseX/2, mouseY/2, mouseY/2);
+  rect(mouseX, mouseY, 175,175);
+  fill(255);
+  ellipse(mouseX, mouseY,75,75);
+}

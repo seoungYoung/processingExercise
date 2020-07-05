@@ -1,0 +1,12 @@
+int radius = 10;
+void setup() {
+ size(500, 400);
+}
+void draw() {
+  background(255);
+ ellipse(width / 2, height / 2, radius, radius);
+ radius++;
+ if(radius > 400) {
+  radius = 10; 
+ }
+}

@@ -1,0 +1,16 @@
+int i;
+int rectSize = 50;
+
+void setup() {
+ size(500, 400); 
+}
+void draw() {
+  background(0);
+  rect(i, 60, rectSize, rectSize);
+  i++;
+  rectSize++;
+  if(i > width) {
+    i = -80;
+    rectSize = 50;
+  }
+}

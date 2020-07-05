@@ -1,0 +1,15 @@
+PFont f;
+
+void setup() {
+  size(500, 400);
+  f = createFont("굴림", 32);
+  textFont(f);
+  fill(255,0,0);
+  //textSize(64);  
+}
+void draw() {
+  background(255);
+  text("대한민국", mouseX, mouseY);  
+}
+
+

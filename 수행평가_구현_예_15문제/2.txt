@@ -1,0 +1,12 @@
+void setup() {
+  size(500, 400); 
+}
+
+void draw() {
+  background(255);
+  strokeWeight(5);
+  stroke(mouseX/2);
+  line(mouseX, mouseY, mouseX, mouseY - 100);
+  line(mouseX, mouseY, mouseX-100, mouseY + 100);
+  line(mouseX, mouseY, mouseX + 100, mouseY + 100);
+}
