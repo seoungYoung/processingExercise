@@ -1,0 +1,15 @@
+내 이미지 -   
+http://122.37.216.171:12345/onClass/teach/tech.png
+
+아래는 안됨.
+https://bit.ly/2KyzT0X
+
+
+PImage img;
+void setup() {
+  size(300, 300);
+ img = loadImage("http://122.37.216.171:12345/onClass/teach/tech.png");
+}
+void draw() {
+  image(img, 0, 0, img.width/2, img.height/2);
+}

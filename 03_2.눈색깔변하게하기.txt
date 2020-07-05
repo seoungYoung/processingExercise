@@ -1,0 +1,11 @@
+void setup() {
+  size(480, 270);  
+  frameRate(30);
+}
+
+void draw() {
+  background(255);  
+  fill(mouseX/2, 0, mouseY/2); 
+  ellipse(200, 120, 16, 32); 
+  ellipse(250, 120, 16, 32); 
+}

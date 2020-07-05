@@ -1,0 +1,10 @@
+PImage img;
+void setup() {
+  size(300, 300);
+ img = loadImage("http://122.37.216.171:12345/onClass/teach/tech.png");
+ imageMode(CENTER);
+}
+void draw() {
+  background(255);
+  image(img, mouseX, mouseY);
+}

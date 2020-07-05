@@ -1,0 +1,28 @@
+int brushSize;
+color brushCol;
+
+void setup() {
+  size(500, 500);
+  background(255);
+  brushSize = 40;
+  brushCol = color(0);
+}
+void draw() {
+  if (mousePressed) {
+    stroke(brushCol);
+    strokeWeight(brushSize);
+    line(pmouseX, pmouseY, mouseX, mouseY);
+  }
+}
+void keyPressed() {
+  if (key == '-') brushSize -= 5;
+  else if (key == '=') brushSize += 5; // brushSize 5씩 굵게 하기
+  else if (key == 'r') background(255); // 초기화
+  // 스페이스 바 누르면 임의의 컬러색 만들기 
+  else if (key ==' ') brushCol = color(random(255), random(255), random(255)); 
+  else if (key == 's') { // s 키 누르면 png 파일로 저장하기
+    save(str(year()) + month() + day() + hour() + minute() + second() + ".png");
+    println("image Saved!!");
+  }
+  brushSize = constrain(brushSize, 5, 100); // 100을 넘으면 100으로 5보다 작아지면 5로 고정
+}

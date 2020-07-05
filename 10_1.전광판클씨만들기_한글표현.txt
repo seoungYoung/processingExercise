@@ -1,0 +1,17 @@
+PFont f;
+int i;
+void setup() {
+  size(400, 100);
+  f = createFont("굴림", 64, true);
+  textFont(f);
+  fill(255,0,0);
+  //textSize(64);  
+}
+void draw() {
+  background(255);
+  text("대한민국", i++, 64);
+  if(i > width) i = -200;
+  //i++;
+}
+
+

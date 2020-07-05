@@ -1,0 +1,12 @@
+int i;
+int direction = 1; // 1 : Right, 0 : Left
+void setup() {
+ size(400, 100); 
+}
+void draw() {
+  background(127);
+  if(direction == 1) arc(i++,30, 30, 30, PI/4, PI*7/4);
+  else arc(i--, 30, 30, 30, PI*5/4, PI*11/4);
+  if(i >= width - 15) direction = 0;
+  if(i <= 0 + 15) direction = 1;
+}

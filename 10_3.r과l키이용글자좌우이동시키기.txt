@@ -1,0 +1,17 @@
+int pos;
+void setup() {
+  size(400, 100);
+ textSize(64); 
+}
+void draw() {
+  background(0);
+  text("Korea", pos, 70);
+  if(key == 'r') {
+    pos++;
+    println(pos);
+  }
+  
+  if(key == 'l') pos--;
+  if(pos < -150) pos = width;
+  if(pos > width) pos = -150;
+}

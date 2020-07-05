@@ -1,0 +1,10 @@
+void setup() {
+ textSize(64); 
+}
+void draw() {
+  
+}
+void keyPressed() {
+ background(0);
+ text(key, 30, 70);
+}
